@@ -6,31 +6,54 @@
   <title>Кино и мысли</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: auto;
-      padding: 1rem;
       background: #fff;
       color: #222;
     }
+
+    .hero {
+      height: 100vh;
+      background-image: url('img/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .content {
+      max-width: 700px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
     header {
       border-bottom: 1px solid #ddd;
       margin-bottom: 2rem;
       padding-bottom: 1rem;
     }
-    h1 {
-      margin: 0;
-    }
+
     .post-preview {
       margin-bottom: 2rem;
     }
+
     .post-preview img {
       width: 100%;
       border-radius: 8px;
     }
+
     .post-preview h2 {
       margin: 0.5rem 0;
     }
+
     .post-preview a {
       text-decoration: none;
       color: #007acc;
@@ -39,17 +62,27 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Кино и мысли</h1>
-  </header>
 
-  <main>
-    <section class="post-preview">
-      <img src="img/amour.jpg" alt="Кадр из фильма Amour" />
-      <h2>Amour (2012)</h2>
-      <p>Рецензия на фильм «Amour» Михаэля Ханеке.</p>
-      <a href="amour.html">Читать →</a>
-    </section>
-  </main>
+  <!-- Hero-секция -->
+  <section class="hero">
+    <h1>спасибля за совет</h1>
+  </section>
+
+  <!-- Основной контент -->
+  <div class="content">
+    <header>
+      <h1>Кино и мысли</h1>
+    </header>
+
+    <main>
+      <section class="post-preview">
+        <img src="img/amour.jpg" alt="Кадр из фильма Amour" />
+        <h2>Amour (2012)</h2>
+        <p>Рецензия на фильм «Amour» Михаэля Ханеке.</p>
+        <a href="amour.html">Читать →</a>
+      </section>
+    </main>
+  </div>
+
 </body>
 </html>
