@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: spasiblya/spasiblya
   branch: main
+  auth_token: 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
 
 media_folder: "img"
 public_folder: "/img"
@@ -11,10 +13,11 @@ collections:
     folder: "posts"
     create: true
     slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
     fields:
       - { label: "Заголовок", name: "title", widget: "string" }
       - { label: "Дата", name: "date", widget: "datetime" }
-      - { label: "Изображение", name: "image", widget: "image" }
-      - { label: "Содержимое", name: "body", widget: "markdown" }
+      - { label: "Текст", name: "body", widget: "markdown" }
+
+
+
+
