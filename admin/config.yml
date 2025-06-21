@@ -2,7 +2,9 @@ backend:
   name: github
   repo: spasiblya/spasiblya
   branch: main
-  auth_token: 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
+  auth_type: oauth
+  base_url: https://spasiblya.netlify.app
+  auth_endpoint: api/auth
 
 media_folder: "img"
 public_folder: "/img"
@@ -17,6 +19,7 @@ collections:
       - { label: "Заголовок", name: "title", widget: "string" }
       - { label: "Дата", name: "date", widget: "datetime" }
       - { label: "Текст", name: "body", widget: "markdown" }
+
 
 
 
