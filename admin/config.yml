@@ -1,4 +1,4 @@
-backend:
+bbackend:
   name: git-gateway
   branch: main
 
@@ -14,5 +14,4 @@ collections:
     fields:
       - { label: "Заголовок", name: "title", widget: "string" }
       - { label: "Дата", name: "date", widget: "datetime" }
-      - { label: "Изображение", name: "thumbnail", widget: "image" }
-      - { label: "Содержание", name: "body", widget: "markdown" }
+      - { label: "Содержимое", name: "body", widget: "markdown" }
